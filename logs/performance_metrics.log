@@ -1,0 +1,780 @@
+2026-01-14 12:12:58,959 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-14 12:12:58,961 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-14 12:12:58,962 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-14 12:12:58,962 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-14 12:13:00,221 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-14 12:13:00,226 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-14 12:13:00,227 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-14 12:13:00,235 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-01-14 12:13:00,236 - Knowledge - INFO - load persisted knowledge: end
+2026-01-14 12:13:00,236 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2026-01-14 12:13:00,249 - Knowledge - INFO - Redis support added with prefix knowledge:b4028lb:
+2026-01-14 12:13:00,601 - Knowledge - INFO - Starting knowledge initialization for ID: 0KoY4f-b4028lb
+2026-01-14 12:13:00,601 - Knowledge - INFO - 🔍 Checking Redis for build_id: b4028lb
+2026-01-14 12:13:00,601 - Knowledge - INFO - 🔍 Full session ID: 0KoY4f-b4028lb
+2026-01-14 12:13:00,602 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b4028lb:
+2026-01-14 12:13:00,602 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-14 12:13:00,602 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-14 12:13:00,603 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b4028lb
+2026-01-14 12:13:00,608 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-14 12:13:00,613 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2026-01-14 12:13:00,662 - Knowledge - INFO - load persisted docinfo: begin
+2026-01-14 12:13:00,665 - Knowledge - INFO - load persisted docinfo: end
+2026-01-14 12:13:00,665 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-14 12:13:00,665 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2026-01-14 12:13:00,666 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-14 12:13:00,666 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b4028lb
+2026-01-14 12:13:00,671 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-14 12:13:00,671 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2026-01-14 12:13:00,672 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-14 12:13:00,673 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-01-14 12:13:00,674 - Knowledge - INFO - load persisted knowledge: end
+2026-01-14 12:13:00,674 - Knowledge - INFO - 📁 Disk load complete in 0.06s
+2026-01-14 12:13:00,674 - Knowledge - INFO - Populating ingest queue with source files...
+2026-01-14 12:13:00,780 - Knowledge - INFO - Added 153 files from /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App to ingest queue
+2026-01-14 12:13:00,780 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 160, Duration: 0ms
+2026-01-14 12:13:00,785 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2026-01-14 12:13:00,785 - Knowledge - INFO - knowledge worker kw1 start
+2026-01-14 12:13:00,786 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2026-01-14 12:13:00,786 - Knowledge - INFO - [kw1] Queue=153, InProgress=0, PendingWorkers=0/1, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,787 - Knowledge - INFO - knowledge worker kw2 start
+2026-01-14 12:13:00,788 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=153, active_workers=0/1
+2026-01-14 12:13:00,788 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2026-01-14 12:13:00,790 - Knowledge - INFO - [kw2] Queue=153, InProgress=0, PendingWorkers=0/2, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,793 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/DEPLOYMENT.md
+2026-01-14 12:13:00,794 - Knowledge - INFO - knowledge worker kw3 start
+2026-01-14 12:13:00,794 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2026-01-14 12:13:00,794 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=153, active_workers=1/3
+2026-01-14 12:13:00,795 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/DEPLOYMENT.md (ext=.md, size=12596)
+2026-01-14 12:13:00,796 - Knowledge - INFO - [kw3] Queue=148, InProgress=0, PendingWorkers=1/3, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,797 - Knowledge - INFO - knowledge worker kw4 start
+2026-01-14 12:13:00,797 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2026-01-14 12:13:00,798 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/services/employeeService.js
+2026-01-14 12:13:00,798 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/jest.setup.js
+2026-01-14 12:13:00,799 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=148, active_workers=2/4
+2026-01-14 12:13:00,799 - Knowledge - INFO - [kw4] Queue=143, InProgress=0, PendingWorkers=2/4, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,800 - Knowledge - INFO - knowledge worker kw5 start
+2026-01-14 12:13:00,800 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2026-01-14 12:13:00,801 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/services/employeeService.js (ext=.js, size=847)
+2026-01-14 12:13:00,802 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Login.js
+2026-01-14 12:13:00,802 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=143, active_workers=3/5
+2026-01-14 12:13:00,803 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/LandingPage.js
+2026-01-14 12:13:00,803 - Knowledge - INFO - knowledge worker kw6 start
+2026-01-14 12:13:00,803 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/jest.setup.js (ext=.js, size=785)
+2026-01-14 12:13:00,804 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2026-01-14 12:13:00,804 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/App.js
+2026-01-14 12:13:00,805 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Profile.js
+2026-01-14 12:13:00,806 - Knowledge - INFO - [kw5] Queue=133, InProgress=0, PendingWorkers=4/6, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,806 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/NotFoundPage.js
+2026-01-14 12:13:00,807 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/App.css
+2026-01-14 12:13:00,808 - Knowledge - INFO - knowledge worker kw7 start
+2026-01-14 12:13:00,808 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2026-01-14 12:13:00,808 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/VerifyUsername.js
+2026-01-14 12:13:00,809 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Footer.js
+2026-01-14 12:13:00,809 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=133, active_workers=4/7
+2026-01-14 12:13:00,810 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/NotFoundPage.js (ext=.js, size=1039)
+2026-01-14 12:13:00,811 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/App.css (ext=.css, size=771)
+2026-01-14 12:13:00,815 - Knowledge - INFO - knowledge worker kw8 start
+2026-01-14 12:13:00,815 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2026-01-14 12:13:00,816 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Register.js
+2026-01-14 12:13:00,816 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/ResetPassword.js
+2026-01-14 12:13:00,817 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/ProtectedRoute.js
+2026-01-14 12:13:00,817 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Navbar.js
+2026-01-14 12:13:00,818 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/reportWebVitals.js
+2026-01-14 12:13:00,819 - Knowledge - INFO - knowledge worker kw9 start
+2026-01-14 12:13:00,820 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/QuickActions.js
+2026-01-14 12:13:00,820 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2026-01-14 12:13:00,821 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/ProtectedRoute.js (ext=.js, size=367)
+2026-01-14 12:13:00,822 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/reportWebVitals.js (ext=.js, size=362)
+2026-01-14 12:13:00,822 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Dashboard.js
+2026-01-14 12:13:00,823 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/NewDepartmentForm.js
+2026-01-14 12:13:00,823 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/DepartmentList.js
+2026-01-14 12:13:00,824 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/QuickActions.js (ext=.js, size=1198)
+2026-01-14 12:13:00,825 - Knowledge - INFO - knowledge worker kw10 start
+2026-01-14 12:13:00,825 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2026-01-14 12:13:00,826 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/services/departmentService.js
+2026-01-14 12:13:00,827 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/DepartmentForm.js
+2026-01-14 12:13:00,828 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/EmployeeList.js
+2026-01-14 12:13:00,828 - Knowledge - INFO - knowledge worker kw11 start
+2026-01-14 12:13:00,829 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2026-01-14 12:13:00,829 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/services/departmentService.js (ext=.js, size=876)
+2026-01-14 12:13:00,830 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/EmployeeForm.js
+2026-01-14 12:13:00,831 - Knowledge - INFO - [kw9] Queue=128, InProgress=0, PendingWorkers=5/11, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,832 - Knowledge - INFO - [kw8] Queue=128, InProgress=0, PendingWorkers=5/11, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,832 - Knowledge - INFO - [kw10] Queue=128, InProgress=0, PendingWorkers=5/11, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,833 - Knowledge - INFO - [kw6] Queue=128, InProgress=0, PendingWorkers=5/11, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,833 - Knowledge - INFO - [kw7] Queue=128, InProgress=0, PendingWorkers=5/11, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,834 - Knowledge - INFO - knowledge worker kw12 start
+2026-01-14 12:13:00,834 - Knowledge - INFO - [kw11] Queue=128, InProgress=0, PendingWorkers=5/11, Completed=0/153 (0.0%)
+2026-01-14 12:13:00,834 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2026-01-14 12:13:00,837 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/theme.js
+2026-01-14 12:13:00,838 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=128, active_workers=5/12
+2026-01-14 12:13:00,840 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=128, active_workers=5/12
+2026-01-14 12:13:00,841 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=128, active_workers=5/12
+2026-01-14 12:13:00,842 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=128, active_workers=5/12
+2026-01-14 12:13:00,842 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=128, active_workers=5/12
+2026-01-14 12:13:00,843 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=128, active_workers=5/12
+2026-01-14 12:13:00,843 - Knowledge - INFO - [kw12] Queue=128, InProgress=0, PendingWorkers=5/12, Completed=2/153 (1.3%)
+2026-01-14 12:13:00,844 - Knowledge - INFO - knowledge worker kw13 start
+2026-01-14 12:13:00,844 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2026-01-14 12:13:00,845 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/theme.js (ext=.js, size=862)
+2026-01-14 12:13:00,845 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/index.js
+2026-01-14 12:13:00,846 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/jest.config.js
+2026-01-14 12:13:00,847 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/robots.txt
+2026-01-14 12:13:00,847 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/jest.config.js (ext=.js, size=699)
+2026-01-14 12:13:00,848 - Knowledge - INFO - Worker kw11 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/build-images.sh
+2026-01-14 12:13:00,849 - Knowledge - INFO - Worker kw7 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Register.test.js
+2026-01-14 12:13:00,850 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=128, active_workers=10/13
+2026-01-14 12:13:00,852 - Knowledge - INFO - [kw13] Queue=103, InProgress=0, PendingWorkers=10/13, Completed=4/153 (2.6%)
+2026-01-14 12:13:00,855 - Knowledge - INFO - knowledge worker kw14 start
+2026-01-14 12:13:00,859 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2026-01-14 12:13:00,919 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/index.js (ext=.js, size=392)
+2026-01-14 12:13:00,919 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/index.css
+2026-01-14 12:13:00,956 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/VerifyUsername.js (small file (2733 bytes))
+2026-01-14 12:13:00,956 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/index.css (ext=.css, size=737)
+2026-01-14 12:13:00,967 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/README.md
+2026-01-14 12:13:00,970 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/build-images.sh (ext=.sh, size=266)
+2026-01-14 12:13:00,973 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Register.test.js (ext=.js, size=4480)
+2026-01-14 12:13:00,974 - Knowledge - INFO - Worker kw12 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/rollback-canary.sh
+2026-01-14 12:13:00,974 - Knowledge - INFO - Batch sizing: calculated=5, max_allowed=10, queue=103, active_workers=11/14
+2026-01-14 12:13:00,994 - Knowledge - INFO - [kw14] Queue=98, InProgress=0, PendingWorkers=11/14, Completed=5/153 (3.3%)
+2026-01-14 12:13:01,015 - Knowledge - INFO - knowledge worker kw15 start
+2026-01-14 12:13:01,018 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2026-01-14 12:13:01,021 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/deploy-k8s.sh
+2026-01-14 12:13:01,036 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:01,036 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/robots.txt (ext=.txt, size=67)
+2026-01-14 12:13:01,036 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/NewDepartmentForm.js (small file (2324 bytes))
+2026-01-14 12:13:01,039 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/package.json
+2026-01-14 12:13:01,040 - Knowledge - INFO - Worker kw11 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/start-backend.sh
+2026-01-14 12:13:01,041 - Knowledge - INFO - Worker kw7 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/DepartmentList.test.js
+2026-01-14 12:13:01,045 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/README.md (ext=.md, size=4952)
+2026-01-14 12:13:01,049 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/rollback-canary.sh (ext=.sh, size=763)
+2026-01-14 12:13:01,055 - Knowledge - INFO - Worker kw13 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment-canary.yaml
+2026-01-14 12:13:01,059 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=98, active_workers=13/15
+2026-01-14 12:13:01,062 - Knowledge - INFO - [kw15] Queue=88, InProgress=0, PendingWorkers=13/15, Completed=5/153 (3.3%)
+2026-01-14 12:13:01,062 - Knowledge - INFO - knowledge worker kw16 start
+2026-01-14 12:13:01,063 - Knowledge - INFO - Worker kw17 created using shared MongoDB connection pool
+2026-01-14 12:13:01,064 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/DEPLOYMENT.md
+2026-01-14 12:13:01,065 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/deploy-k8s.sh (ext=.sh, size=140)
+2026-01-14 12:13:01,066 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/jest.setup.js
+2026-01-14 12:13:01,082 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/package.json (ext=.json, size=2242)
+2026-01-14 12:13:01,084 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/DepartmentForm.js (small file (2338 bytes))
+2026-01-14 12:13:01,087 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/start-backend.sh (ext=.sh, size=188)
+2026-01-14 12:13:01,121 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/DepartmentList.test.js (ext=.js, size=2951)
+2026-01-14 12:13:01,122 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/tailwind.config.js
+2026-01-14 12:13:01,130 - Knowledge - INFO - Worker kw12 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/test-backend.sh
+2026-01-14 12:13:01,132 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment-canary.yaml (ext=.yaml, size=3390)
+2026-01-14 12:13:01,133 - Knowledge - INFO - Worker kw14 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/configmap.yaml
+2026-01-14 12:13:01,134 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/configmap.yaml (ext=.yaml, size=162)
+2026-01-14 12:13:01,141 - Knowledge - INFO - [kw16] Queue=84, InProgress=0, PendingWorkers=14/16, Completed=5/153 (3.3%)
+2026-01-14 12:13:01,144 - Knowledge - INFO - knowledge worker kw17 start
+2026-01-14 12:13:01,144 - Knowledge - INFO - Worker kw18 created using shared MongoDB connection pool
+2026-01-14 12:13:01,145 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/manifest.json
+2026-01-14 12:13:01,146 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/deploy-blue-green.sh
+2026-01-14 12:13:01,147 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/App.css
+2026-01-14 12:13:01,148 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/postcss.config.js
+2026-01-14 12:13:01,149 - Knowledge - INFO - Worker kw11 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/promote-canary.sh
+2026-01-14 12:13:01,150 - Knowledge - INFO - Worker kw7 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/EmployeeList.test.js
+2026-01-14 12:13:01,152 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/tailwind.config.js (ext=.js, size=234)
+2026-01-14 12:13:01,152 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/test-backend.sh (ext=.sh, size=137)
+2026-01-14 12:13:01,153 - Knowledge - INFO - Worker kw13 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/hpa.yaml
+2026-01-14 12:13:01,154 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=88, active_workers=14/17
+2026-01-14 12:13:01,155 - Knowledge - INFO - Worker kw14 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment-green.yaml
+2026-01-14 12:13:01,156 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=84, active_workers=14/17
+2026-01-14 12:13:01,157 - Knowledge - INFO - [kw17] Queue=84, InProgress=0, PendingWorkers=14/17, Completed=5/153 (3.3%)
+2026-01-14 12:13:01,158 - Knowledge - INFO - knowledge worker kw18 start
+2026-01-14 12:13:01,159 - Knowledge - INFO - Worker kw19 created using shared MongoDB connection pool
+2026-01-14 12:13:01,159 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/manifest.json (ext=.json, size=532)
+2026-01-14 12:13:01,160 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/reportWebVitals.js
+2026-01-14 12:13:01,161 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/network-policy.yaml
+2026-01-14 12:13:01,163 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/postcss.config.js (ext=.js, size=83)
+2026-01-14 12:13:01,164 - Knowledge - INFO - Worker kw11 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/test-frontend.sh
+2026-01-14 12:13:01,166 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/EmployeeList.test.js (ext=.js, size=4090)
+2026-01-14 12:13:01,167 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/sitemap.xml
+2026-01-14 12:13:01,168 - Knowledge - INFO - Worker kw12 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/rollback-deployment.sh
+2026-01-14 12:13:01,170 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/hpa.yaml (ext=.yaml, size=4134)
+2026-01-14 12:13:01,170 - Knowledge - INFO - Worker kw15 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-service-production.yaml
+2026-01-14 12:13:01,171 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment-green.yaml (ext=.yaml, size=3728)
+2026-01-14 12:13:01,173 - Knowledge - INFO - Worker kw16 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/pdb.yaml
+2026-01-14 12:13:01,173 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=84, active_workers=16/18
+2026-01-14 12:13:01,175 - Knowledge - INFO - [kw18] Queue=76, InProgress=0, PendingWorkers=16/18, Completed=5/153 (3.3%)
+2026-01-14 12:13:01,210 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=76, active_workers=16/18
+2026-01-14 12:13:01,213 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Dashboard.spec.js
+2026-01-14 12:13:01,214 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/services/departmentService.js
+2026-01-14 12:13:01,215 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/network-policy.yaml (ext=.yaml, size=2127)
+2026-01-14 12:13:01,219 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/babel.config.js
+2026-01-14 12:13:01,221 - Knowledge - INFO - Worker kw7 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/start-frontend.sh
+2026-01-14 12:13:01,223 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/test-frontend.sh (ext=.sh, size=134)
+2026-01-14 12:13:01,224 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/sitemap.xml (ext=.xml, size=314)
+2026-01-14 12:13:01,225 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/rollback-deployment.sh (ext=.sh, size=1819)
+2026-01-14 12:13:01,229 - Knowledge - INFO - Worker kw13 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment-canary.yaml
+2026-01-14 12:13:01,232 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-service-production.yaml (ext=.yaml, size=1596)
+2026-01-14 12:13:01,233 - Knowledge - INFO - Worker kw14 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment-green.yaml
+2026-01-14 12:13:01,235 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/pdb.yaml (ext=.yaml, size=904)
+2026-01-14 12:13:01,236 - Knowledge - INFO - Worker kw17 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-service.yaml
+2026-01-14 12:13:01,238 - Knowledge - INFO - knowledge worker kw19 start
+2026-01-14 12:13:01,239 - Knowledge - INFO - Worker kw20 created using shared MongoDB connection pool
+2026-01-14 12:13:01,239 - Knowledge - INFO - Worker kw18 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/DepartmentManagementApplicationTests.java
+2026-01-14 12:13:01,241 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Dashboard.spec.js (ext=.js, size=1678)
+2026-01-14 12:13:01,242 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment-blue.yaml
+2026-01-14 12:13:01,244 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/babel.config.js (ext=.js, size=313)
+2026-01-14 12:13:01,246 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/start-frontend.sh (ext=.sh, size=190)
+2026-01-14 12:13:01,247 - Knowledge - INFO - Worker kw11 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/switch-blue-green.sh
+2026-01-14 12:13:01,248 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/index.html
+2026-01-14 12:13:01,249 - Knowledge - INFO - Worker kw12 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/deploy-canary.sh
+2026-01-14 12:13:01,250 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment-canary.yaml (ext=.yaml, size=2733)
+2026-01-14 12:13:01,250 - Knowledge - INFO - Worker kw15 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/secrets-template.yaml
+2026-01-14 12:13:01,251 - Knowledge - INFO - Worker kw16 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment.yaml
+2026-01-14 12:13:01,251 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment-green.yaml (ext=.yaml, size=3072)
+2026-01-14 12:13:01,252 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-service.yaml (ext=.yaml, size=225)
+2026-01-14 12:13:01,254 - Knowledge - INFO - knowledge worker kw20 start
+2026-01-14 12:13:01,255 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/DepartmentManagementApplicationTests.java (ext=.java, size=7841)
+2026-01-14 12:13:01,258 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Login.test.js
+2026-01-14 12:13:01,260 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment-blue.yaml (ext=.yaml, size=3067)
+2026-01-14 12:13:01,265 - Knowledge - INFO - Worker kw7 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/undeploy-k8s.sh
+2026-01-14 12:13:01,266 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/index.html (ext=.html, size=1057)
+2026-01-14 12:13:01,267 - Knowledge - INFO - Worker kw13 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/rbac.yaml
+2026-01-14 12:13:01,267 - Knowledge - INFO - Worker kw12 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/openapi-client.sh
+2026-01-14 12:13:01,274 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/promote-canary.sh (small file (2235 bytes))
+2026-01-14 12:13:01,276 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment.yaml (ext=.yaml, size=659)
+2026-01-14 12:13:01,276 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/secrets-template.yaml (ext=.yaml, size=1901)
+2026-01-14 12:13:01,279 - Knowledge - INFO - Worker kw14 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/README.md
+2026-01-14 12:13:01,280 - Knowledge - INFO - Worker kw17 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/src/components/ProtectedRoute.js
+2026-01-14 12:13:01,333 - Knowledge - INFO - Worker kw18 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/EmployeeManagementApplicationTests.java
+2026-01-14 12:13:01,335 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment-blue.yaml
+2026-01-14 12:13:01,335 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/EmployeeManagementApplicationTests.java (ext=.java, size=7040)
+2026-01-14 12:13:01,336 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment-blue.yaml (ext=.yaml, size=3723)
+2026-01-14 12:13:01,339 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/rbac.yaml (ext=.yaml, size=1374)
+2026-01-14 12:13:01,340 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/openapi-client.sh (ext=.sh, size=269)
+2026-01-14 12:13:01,341 - Knowledge - INFO - Worker kw16 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-service.yaml
+2026-01-14 12:13:01,344 - Knowledge - INFO - Worker kw15 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/DEPLOYMENT-GUIDE.md
+2026-01-14 12:13:01,346 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/README.md (ext=.md, size=8882)
+2026-01-14 12:13:01,346 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/switch-blue-green.sh (small file (2641 bytes))
+2026-01-14 12:13:01,346 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/src/components/ProtectedRoute.js (ext=.js, size=367)
+2026-01-14 12:13:01,347 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Login.test.js (ext=.js, size=3264)
+2026-01-14 12:13:01,348 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/undeploy-k8s.sh (ext=.sh, size=149)
+2026-01-14 12:13:01,348 - Knowledge - INFO - Worker kw18 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/APITestSuite.java
+2026-01-14 12:13:01,355 - Knowledge - INFO - Worker kw13 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/configmap-production.yaml
+2026-01-14 12:13:01,358 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/deploy-canary.sh (small file (2360 bytes))
+2026-01-14 12:13:01,359 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/deploy-blue-green.sh (small file (2689 bytes))
+2026-01-14 12:13:01,359 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-service.yaml (ext=.yaml, size=205)
+2026-01-14 12:13:01,360 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/DEPLOYMENT-GUIDE.md (ext=.md, size=12596)
+2026-01-14 12:13:01,361 - Knowledge - INFO - Worker kw17 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/HELP.md
+2026-01-14 12:13:01,362 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Profile.test.js
+2026-01-14 12:13:01,363 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/APITestSuite.java (ext=.java, size=7018)
+2026-01-14 12:13:01,365 - Knowledge - INFO - Worker kw16 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment.yaml
+2026-01-14 12:13:01,365 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/configmap-production.yaml (ext=.yaml, size=809)
+2026-01-14 12:13:01,365 - Knowledge - INFO - Worker kw15 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-service-production.yaml
+2026-01-14 12:13:01,367 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/HELP.md (ext=.md, size=2167)
+2026-01-14 12:13:01,367 - Knowledge - INFO - Worker kw18 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/JUnit.java
+2026-01-14 12:13:01,367 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Profile.test.js (ext=.js, size=1740)
+2026-01-14 12:13:01,368 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment.yaml (ext=.yaml, size=795)
+2026-01-14 12:13:01,371 - Knowledge - INFO - Worker kw17 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/FullAPITests.java
+2026-01-14 12:13:01,371 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-service-production.yaml (ext=.yaml, size=1583)
+2026-01-14 12:13:01,372 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/JUnit.java (ext=.java, size=7011)
+2026-01-14 12:13:01,374 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/FullAPITests.java (ext=.java, size=7018)
+2026-01-14 12:13:01,460 - Knowledge - INFO - [kw19] Queue=68, InProgress=0, PendingWorkers=18/20, Completed=5/153 (3.3%)
+2026-01-14 12:13:01,460 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=68, active_workers=18/20
+2026-01-14 12:13:01,461 - Knowledge - INFO - [kw20] Queue=68, InProgress=0, PendingWorkers=18/20, Completed=6/153 (3.9%)
+2026-01-14 12:13:01,466 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=68, active_workers=18/20
+2026-01-14 12:13:01,467 - Knowledge - INFO - Worker kw19 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/AdditionalAPITests.java
+2026-01-14 12:13:01,468 - Knowledge - INFO - Worker kw20 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/UtilitiesTests.java
+2026-01-14 12:13:01,469 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/AdditionalAPITests.java (ext=.java, size=7024)
+2026-01-14 12:13:01,469 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/UtilitiesTests.java (ext=.java, size=7020)
+2026-01-14 12:13:01,470 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:01,470 - Knowledge - INFO - Worker kw19 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/BackendAPITests.java
+2026-01-14 12:13:01,471 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:01,471 - Knowledge - INFO - Worker kw20 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/repository/EmployeeRepository.java
+2026-01-14 12:13:01,471 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:01,472 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/pdb.yaml
+2026-01-14 12:13:01,473 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/BackendAPITests.java (ext=.java, size=7021)
+2026-01-14 12:13:01,474 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:01,474 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:01,477 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/DepartmentManagementApplicationTests.java
+2026-01-14 12:13:01,477 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:01,477 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:01,478 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/repository/EmployeeRepository.java (ext=.java, size=675)
+2026-01-14 12:13:01,478 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:01,479 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/deploy-k8s.sh
+2026-01-14 12:13:01,480 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment.yaml
+2026-01-14 12:13:01,480 - Knowledge - INFO - Worker kw19 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/APITests.java
+2026-01-14 12:13:01,481 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/rollback-canary.sh
+2026-01-14 12:13:01,481 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/build-images.sh
+2026-01-14 12:13:01,482 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/EmployeeManagementApplicationTests.java
+2026-01-14 12:13:01,482 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-service-production.yaml
+2026-01-14 12:13:01,483 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/configmap.yaml
+2026-01-14 12:13:01,522 - Knowledge - INFO - Worker kw20 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/repository/DepartmentRepository.java
+2026-01-14 12:13:01,525 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/repository/DepartmentRepository.java (ext=.java, size=377)
+2026-01-14 12:13:01,530 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/APITests.java (ext=.java, size=7014)
+2026-01-14 12:13:01,531 - Knowledge - INFO - Worker kw19 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/AuxAPITests.java
+2026-01-14 12:13:01,532 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/AuxAPITests.java (ext=.java, size=7017)
+2026-01-14 12:13:01,534 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment-canary.yaml
+2026-01-14 12:13:01,535 - Knowledge - INFO - Worker kw20 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/repository/UserRepository.java
+2026-01-14 12:13:01,540 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/repository/UserRepository.java (ext=.java, size=371)
+2026-01-14 12:13:01,632 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/deploy-blue-green.sh
+2026-01-14 12:13:01,633 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-service.yaml
+2026-01-14 12:13:01,633 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/APITestSuite.java
+2026-01-14 12:13:01,635 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment-green.yaml
+2026-01-14 12:13:01,635 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/test-backend.sh
+2026-01-14 12:13:01,635 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/start-backend.sh
+2026-01-14 12:13:01,641 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/hpa.yaml
+2026-01-14 12:13:01,643 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:01,649 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/network-policy.yaml
+2026-01-14 12:13:01,651 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/secrets-template.yaml
+2026-01-14 12:13:01,655 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/JUnit.java
+2026-01-14 12:13:01,656 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment.yaml
+2026-01-14 12:13:01,657 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:01,657 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/promote-canary.sh
+2026-01-14 12:13:01,657 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment-green.yaml
+2026-01-14 12:13:01,658 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment-canary.yaml
+2026-01-14 12:13:01,658 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/rollback-deployment.sh
+2026-01-14 12:13:01,659 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-service.yaml
+2026-01-14 12:13:01,660 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:01,661 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/frontend-deployment-blue.yaml
+2026-01-14 12:13:01,662 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-deployment-blue.yaml
+2026-01-14 12:13:01,719 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/UtilitiesTests.java
+2026-01-14 12:13:01,727 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/AdditionalAPITests.java
+2026-01-14 12:13:01,833 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/DEPLOYMENT-GUIDE.md
+2026-01-14 12:13:02,250 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/README.md
+2026-01-14 12:13:02,251 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/deploy-canary.sh
+2026-01-14 12:13:02,252 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/src/components/ProtectedRoute.js
+2026-01-14 12:13:02,252 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:02,254 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/jest.config.js
+2026-01-14 12:13:02,254 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/BackendAPITests.java
+2026-01-14 12:13:02,256 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/test-frontend.sh
+2026-01-14 12:13:02,256 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/backend-service-production.yaml
+2026-01-14 12:13:02,257 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/rbac.yaml
+2026-01-14 12:13:02,258 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/repository/EmployeeRepository.java
+2026-01-14 12:13:02,258 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/HELP.md
+2026-01-14 12:13:02,259 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/README.md
+2026-01-14 12:13:02,310 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:02,316 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/robots.txt
+2026-01-14 12:13:02,317 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:02,319 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/index.js
+2026-01-14 12:13:02,435 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/switch-blue-green.sh
+2026-01-14 12:13:02,435 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/openapi-client.sh
+2026-01-14 12:13:02,552 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/APITests.java
+2026-01-14 12:13:02,554 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/kubernetes/configmap-production.yaml
+2026-01-14 12:13:02,555 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/repository/DepartmentRepository.java
+2026-01-14 12:13:02,612 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/tailwind.config.js
+2026-01-14 12:13:02,613 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/manifest.json
+2026-01-14 12:13:02,741 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/AuxAPITests.java
+2026-01-14 12:13:02,742 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/repository/UserRepository.java
+2026-01-14 12:13:02,743 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Dashboard.spec.js
+2026-01-14 12:13:02,837 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/test/java/com/example/employeemanagement/FullAPITests.java
+2026-01-14 12:13:02,939 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/index.css
+2026-01-14 12:13:03,054 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/sitemap.xml
+2026-01-14 12:13:03,738 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Login.test.js
+2026-01-14 12:13:04,339 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/package.json
+2026-01-14 12:13:05,241 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/public/index.html
+2026-01-14 12:13:05,243 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:05,278 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Register.test.js
+2026-01-14 12:13:05,939 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/Profile.test.js
+2026-01-14 12:13:07,512 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/postcss.config.js
+2026-01-14 12:13:08,261 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/DepartmentList.test.js
+2026-01-14 12:13:08,474 - Knowledge - INFO - [LLM_CALL] Completed: Navbar.js:chunk1, Duration: 7505ms, PromptTokens: 4280, CompletionTokens: 284, Cost: $0.00054
+2026-01-14 12:13:08,475 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Navbar.js
+2026-01-14 12:13:08,619 - Knowledge - INFO - [LLM_CALL] Completed: App.js:chunk1, Duration: 7782ms, PromptTokens: 2018, CompletionTokens: 429, Cost: $0.00037
+2026-01-14 12:13:08,631 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/App.js
+2026-01-14 12:13:09,323 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/babel.config.js
+2026-01-14 12:13:09,340 - Knowledge - INFO - [LLM_CALL] Completed: LandingPage.js:chunk1, Duration: 8499ms, PromptTokens: 13810, CompletionTokens: 359, Cost: $0.00152
+2026-01-14 12:13:09,360 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/LandingPage.js
+2026-01-14 12:13:09,486 - Knowledge - INFO - [LLM_CALL] Completed: Register.js:chunk1, Duration: 8436ms, PromptTokens: 4182, CompletionTokens: 313, Cost: $0.00054
+2026-01-14 12:13:09,494 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Register.js
+2026-01-14 12:13:10,759 - Knowledge - INFO - [LLM_CALL] Completed: Footer.js:chunk1, Duration: 9742ms, PromptTokens: 3198, CompletionTokens: 215, Cost: $0.00041
+2026-01-14 12:13:10,760 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Footer.js
+2026-01-14 12:13:10,774 - Knowledge - INFO - [LLM_CALL] Completed: Dashboard.js:chunk1, Duration: 9809ms, PromptTokens: 11010, CompletionTokens: 308, Cost: $0.00122
+2026-01-14 12:13:10,780 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Dashboard.js
+2026-01-14 12:13:11,574 - Knowledge - INFO - [LLM_CALL] Completed: EmployeeForm.js:chunk1, Duration: 10447ms, PromptTokens: 2598, CompletionTokens: 300, Cost: $0.00038
+2026-01-14 12:13:11,588 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/EmployeeForm.js
+2026-01-14 12:13:11,846 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/__tests__/EmployeeList.test.js
+2026-01-14 12:13:11,853 - Knowledge - INFO - [LLM_CALL] Completed: ResetPassword.js:chunk1, Duration: 10793ms, PromptTokens: 3014, CompletionTokens: 330, Cost: $0.00043
+2026-01-14 12:13:11,865 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/ResetPassword.js
+2026-01-14 12:13:12,643 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 272, Duration: 0ms
+2026-01-14 12:13:12,645 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 2ms
+2026-01-14 12:13:12,651 - Knowledge - INFO - Progress: 47.7% | Files: 73/153 | Rate: 7.16 files/sec | Queue: 60
+2026-01-14 12:13:12,716 - Knowledge - INFO - [LLM_CALL] Completed: Profile.js:chunk1, Duration: 11755ms, PromptTokens: 5174, CompletionTokens: 304, Cost: $0.00064
+2026-01-14 12:13:12,717 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Profile.js
+2026-01-14 12:13:13,364 - Knowledge - INFO - [LLM_CALL] Completed: Login.js:chunk1, Duration: 12524ms, PromptTokens: 3986, CompletionTokens: 302, Cost: $0.00052
+2026-01-14 12:13:13,373 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Login.js
+2026-01-14 12:13:13,390 - Knowledge - INFO - [LLM_CALL] Completed: DepartmentList.js:chunk1, Duration: 12354ms, PromptTokens: 6842, CompletionTokens: 342, Cost: $0.00082
+2026-01-14 12:13:13,438 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/DepartmentList.js
+2026-01-14 12:13:14,296 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/start-frontend.sh
+2026-01-14 12:13:14,515 - Knowledge - INFO - [LLM_CALL] Completed: EmployeeList.js:chunk1, Duration: 13451ms, PromptTokens: 10222, CompletionTokens: 588, Cost: $0.00126
+2026-01-14 12:13:14,517 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/EmployeeList.js
+2026-01-14 12:13:14,526 - Knowledge - INFO - [kw10] Queue=60, InProgress=0, PendingWorkers=20/20, Completed=73/153 (47.7%)
+2026-01-14 12:13:14,527 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=60, active_workers=20/20
+2026-01-14 12:13:14,589 - Knowledge - INFO - [kw14] Queue=60, InProgress=0, PendingWorkers=20/20, Completed=74/153 (48.4%)
+2026-01-14 12:13:14,590 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=60, active_workers=20/20
+2026-01-14 12:13:14,710 - Knowledge - INFO - [kw18] Queue=60, InProgress=0, PendingWorkers=20/20, Completed=74/153 (48.4%)
+2026-01-14 12:13:14,720 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=60, active_workers=20/20
+2026-01-14 12:13:14,783 - Knowledge - INFO - [kw16] Queue=60, InProgress=0, PendingWorkers=20/20, Completed=75/153 (49.0%)
+2026-01-14 12:13:14,783 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=60, active_workers=20/20
+2026-01-14 12:13:14,956 - Knowledge - INFO - [kw1] Queue=60, InProgress=0, PendingWorkers=20/20, Completed=75/153 (49.0%)
+2026-01-14 12:13:14,957 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=60, active_workers=20/20
+2026-01-14 12:13:14,957 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/scripts/undeploy-k8s.sh
+2026-01-14 12:13:15,016 - Knowledge - INFO - Async storing batch of 5 embeddings
+2026-01-14 12:13:15,019 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/JwtTokenUtil.java
+2026-01-14 12:13:15,022 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/JwtRequestFilter.java
+2026-01-14 12:13:15,025 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/SecurityConfig.java
+2026-01-14 12:13:15,028 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/CustomUserDetailsService.java
+2026-01-14 12:13:15,031 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/CustomUserDetailsService.java (ext=.java, size=1325)
+2026-01-14 12:13:15,032 - Knowledge - INFO - Async storage completed for 5 embeddings
+2026-01-14 12:13:15,034 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/JwtTokenUtil.java (small file (2451 bytes))
+2026-01-14 12:13:15,036 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/JwtRequestFilter.java (small file (2541 bytes))
+2026-01-14 12:13:15,039 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/SecurityConfig.java (small file (2273 bytes))
+2026-01-14 12:13:15,145 - Knowledge - INFO - Async storing batch of 4 embeddings
+2026-01-14 12:13:15,148 - Knowledge - INFO - Worker kw14 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/DepartmentController.java
+2026-01-14 12:13:15,152 - Knowledge - INFO - Worker kw14 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/EmployeeController.java
+2026-01-14 12:13:15,155 - Knowledge - INFO - Worker kw14 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/AuthController.java
+2026-01-14 12:13:15,157 - Knowledge - INFO - Worker kw14 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/HomeController.java
+2026-01-14 12:13:15,160 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/HomeController.java (ext=.java, size=489)
+2026-01-14 12:13:15,160 - Knowledge - INFO - Async storage completed for 4 embeddings
+2026-01-14 12:13:15,311 - Knowledge - INFO - Async storing batch of 4 embeddings
+2026-01-14 12:13:15,314 - Knowledge - INFO - Worker kw18 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/config/DataInitializer.java
+2026-01-14 12:13:15,317 - Knowledge - INFO - Worker kw18 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/config/CorsConfig.java
+2026-01-14 12:13:15,320 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/config/CorsConfig.java (ext=.java, size=1239)
+2026-01-14 12:13:15,321 - Knowledge - INFO - Worker kw18 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/EmployeeManagementApplication.java
+2026-01-14 12:13:15,325 - Knowledge - INFO - Worker kw18 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/service/EmployeeService.java
+2026-01-14 12:13:15,327 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/service/EmployeeService.java (ext=.java, size=1335)
+2026-01-14 12:13:15,328 - Knowledge - INFO - Async storage completed for 4 embeddings
+2026-01-14 12:13:15,330 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/config/DataInitializer.java (small file (2371 bytes))
+2026-01-14 12:13:15,332 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/EmployeeManagementApplication.java (small file (2624 bytes))
+2026-01-14 12:13:15,422 - Knowledge - INFO - Async storing batch of 4 embeddings
+2026-01-14 12:13:15,425 - Knowledge - INFO - Worker kw16 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/service/DepartmentService.java
+2026-01-14 12:13:15,429 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/service/DepartmentService.java (ext=.java, size=1381)
+2026-01-14 12:13:15,430 - Knowledge - INFO - Worker kw16 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/model/Employee.java
+2026-01-14 12:13:15,433 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/model/Employee.java (ext=.java, size=1058)
+2026-01-14 12:13:15,434 - Knowledge - INFO - Worker kw16 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/model/Department.java
+2026-01-14 12:13:15,436 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/model/Department.java (ext=.java, size=840)
+2026-01-14 12:13:15,436 - Knowledge - INFO - Worker kw16 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/model/User.java
+2026-01-14 12:13:15,439 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/model/User.java (ext=.java, size=1266)
+2026-01-14 12:13:15,440 - Knowledge - INFO - Async storage completed for 4 embeddings
+2026-01-14 12:13:15,591 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 272, Duration: 0ms
+2026-01-14 12:13:15,592 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1ms
+2026-01-14 12:13:15,593 - Knowledge - INFO - Progress: 51.0% | Files: 79/153 | Rate: 4.92 files/sec | Queue: 40
+2026-01-14 12:13:15,593 - Knowledge - INFO - Async storing batch of 5 embeddings
+2026-01-14 12:13:15,597 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/exception/ResourceNotFoundException.java
+2026-01-14 12:13:15,611 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/exception/ResourceNotFoundException.java (ext=.java, size=530)
+2026-01-14 12:13:15,611 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/README.md
+2026-01-14 12:13:15,626 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/README.md (ext=.md, size=7733)
+2026-01-14 12:13:15,626 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/pom.xml
+2026-01-14 12:13:15,633 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/pom.xml (ext=.xml, size=4409)
+2026-01-14 12:13:15,637 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/package.json
+2026-01-14 12:13:15,643 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/package.json (ext=.json, size=1721)
+2026-01-14 12:13:15,646 - Knowledge - INFO - Async storage completed for 5 embeddings
+2026-01-14 12:13:15,754 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2026-01-14 12:13:15,754 - Knowledge - INFO - [kw12] Queue=40, InProgress=0, PendingWorkers=20/20, Completed=82/153 (53.6%)
+2026-01-14 12:13:15,786 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=40, active_workers=20/20
+2026-01-14 12:13:15,787 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 34ms
+2026-01-14 12:13:15,796 - Knowledge - INFO - Progress: 53.6% | Files: 85/153 | Rate: 5.24 files/sec | Queue: 40
+2026-01-14 12:13:15,934 - Knowledge - INFO - [kw11] Queue=40, InProgress=0, PendingWorkers=20/20, Completed=85/153 (55.6%)
+2026-01-14 12:13:15,935 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=40, active_workers=20/20
+2026-01-14 12:13:16,119 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:16,120 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/exception/ResourceNotFoundException.java
+2026-01-14 12:13:16,124 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 272, Duration: 0ms
+2026-01-14 12:13:16,125 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1ms
+2026-01-14 12:13:16,130 - Knowledge - INFO - [kw13] Queue=36, InProgress=0, PendingWorkers=20/20, Completed=94/153 (61.4%)
+2026-01-14 12:13:16,135 - Knowledge - INFO - Progress: 60.8% | Files: 95/153 | Rate: 5.77 files/sec | Queue: 36
+2026-01-14 12:13:16,137 - Knowledge - INFO - Async storing batch of 5 embeddings
+2026-01-14 12:13:16,154 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=36, active_workers=20/20
+2026-01-14 12:13:16,220 - Knowledge - INFO - Worker kw12 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/ARCHITECTURE.md
+2026-01-14 12:13:16,237 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/ARCHITECTURE.md (ext=.md, size=14372)
+2026-01-14 12:13:16,243 - Knowledge - INFO - Worker kw12 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/terraform/README.md
+2026-01-14 12:13:16,256 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/terraform/README.md (ext=.md, size=4780)
+2026-01-14 12:13:16,257 - Knowledge - INFO - Worker kw12 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/openapi.yaml
+2026-01-14 12:13:16,260 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/openapi.yaml (ext=.yaml, size=7086)
+2026-01-14 12:13:16,267 - Knowledge - INFO - Worker kw12 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/README.md
+2026-01-14 12:13:16,292 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/README.md (ext=.md, size=39330)
+2026-01-14 12:13:16,318 - Knowledge - INFO - Async storage completed for 5 embeddings
+2026-01-14 12:13:16,335 - Knowledge - INFO - [kw20] Queue=36, InProgress=0, PendingWorkers=20/20, Completed=95/153 (62.1%)
+2026-01-14 12:13:16,335 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=36, active_workers=20/20
+2026-01-14 12:13:16,472 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/README.md
+2026-01-14 12:13:16,472 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:16,473 - Knowledge - INFO - [kw19] Queue=36, InProgress=0, PendingWorkers=20/20, Completed=100/153 (65.4%)
+2026-01-14 12:13:16,474 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/service/DepartmentService.java
+2026-01-14 12:13:16,475 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=36, active_workers=20/20
+2026-01-14 12:13:16,716 - Knowledge - INFO - Async storing batch of 5 embeddings
+2026-01-14 12:13:16,722 - Knowledge - INFO - Async storing batch of 5 embeddings
+2026-01-14 12:13:16,728 - Knowledge - INFO - Worker kw13 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/WIKI.md
+2026-01-14 12:13:16,736 - Knowledge - INFO - [kw17] Queue=24, InProgress=0, PendingWorkers=20/20, Completed=104/153 (68.0%)
+2026-01-14 12:13:16,737 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=24, active_workers=20/20
+2026-01-14 12:13:16,742 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/WIKI.md (ext=.md, size=7461)
+2026-01-14 12:13:16,743 - Knowledge - INFO - Worker kw11 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/script.js
+2026-01-14 12:13:16,749 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:16,750 - Knowledge - INFO - Async storing batch of 4 embeddings
+2026-01-14 12:13:16,757 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:16,764 - Knowledge - INFO - Worker kw13 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/aws/README.md
+2026-01-14 12:13:16,767 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/JwtTokenUtil.java
+2026-01-14 12:13:16,767 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:16,814 - Knowledge - INFO - Worker kw11 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/FullAPITests.java
+2026-01-14 12:13:16,844 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/config/DataInitializer.java
+2026-01-14 12:13:16,853 - Knowledge - INFO - Worker kw20 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/APITestSuite.java
+2026-01-14 12:13:16,857 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/aws/README.md (ext=.md, size=7781)
+2026-01-14 12:13:16,861 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Login.js
+2026-01-14 12:13:16,881 - Knowledge - INFO - Worker kw11 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/DepartmentManagementApplicationTests.java
+2026-01-14 12:13:16,917 - Knowledge - INFO - Worker kw20 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/JUnit.java
+2026-01-14 12:13:16,924 - Knowledge - INFO - Worker kw13 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/index.html
+2026-01-14 12:13:16,933 - Knowledge - INFO - Worker kw13 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/docker-compose.yml
+2026-01-14 12:13:16,951 - Knowledge - INFO - Worker kw20 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/AdditionalAPITests.java
+2026-01-14 12:13:16,960 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/docker-compose.yml (ext=.yml, size=1228)
+2026-01-14 12:13:16,966 - Knowledge - INFO - Worker kw11 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/EmployeeManagementApplicationTests.java
+2026-01-14 12:13:16,966 - Knowledge - INFO - Worker kw20 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/BackendAPITests.java
+2026-01-14 12:13:17,010 - Knowledge - INFO - Async storage completed for 5 embeddings
+2026-01-14 12:13:17,037 - Knowledge - INFO - Async storage completed for 5 embeddings
+2026-01-14 12:13:17,054 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/pom.xml
+2026-01-14 12:13:17,055 - Knowledge - INFO - [kw15] Queue=24, InProgress=0, PendingWorkers=20/20, Completed=107/153 (69.9%)
+2026-01-14 12:13:17,057 - Knowledge - INFO - Async storage completed for 4 embeddings
+2026-01-14 12:13:17,058 - Knowledge - INFO - [kw8] Queue=24, InProgress=0, PendingWorkers=20/20, Completed=108/153 (70.6%)
+2026-01-14 12:13:17,058 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=24, active_workers=20/20
+2026-01-14 12:13:17,060 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=24, active_workers=20/20
+2026-01-14 12:13:17,153 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:17,175 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/services/employeeService.js
+2026-01-14 12:13:17,350 - Knowledge - INFO - Async storing batch of 4 embeddings
+2026-01-14 12:13:17,368 - Knowledge - INFO - Worker kw17 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/APITests.java
+2026-01-14 12:13:17,512 - Knowledge - INFO - Worker kw17 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/AuxAPITests.java
+2026-01-14 12:13:17,527 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:17,560 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/LandingPage.js
+2026-01-14 12:13:17,563 - Knowledge - INFO - Worker kw17 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/UtilitiesTests.java
+2026-01-14 12:13:17,711 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/JwtRequestFilter.java
+2026-01-14 12:13:17,712 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Profile.js
+2026-01-14 12:13:17,717 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/model/Employee.java
+2026-01-14 12:13:17,718 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/package.json
+2026-01-14 12:13:17,742 - Knowledge - INFO - Worker kw17 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/repository/EmployeeRepository.java
+2026-01-14 12:13:17,744 - Knowledge - INFO - Async storing batch of 4 embeddings
+2026-01-14 12:13:17,745 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/App.js
+2026-01-14 12:13:17,757 - Knowledge - INFO - Worker kw15 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/repository/DepartmentRepository.java
+2026-01-14 12:13:17,757 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/repository/EmployeeRepository.java (ext=.java, size=675)
+2026-01-14 12:13:17,768 - Knowledge - INFO - Async storage completed for 4 embeddings
+2026-01-14 12:13:17,769 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/repository/DepartmentRepository.java (ext=.java, size=377)
+2026-01-14 12:13:17,769 - Knowledge - INFO - Worker kw15 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/repository/UserRepository.java
+2026-01-14 12:13:17,818 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/repository/UserRepository.java (ext=.java, size=371)
+2026-01-14 12:13:17,820 - Knowledge - INFO - Processing batch of 5 files
+2026-01-14 12:13:17,822 - Knowledge - INFO - Worker kw15 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/JwtTokenUtil.java
+2026-01-14 12:13:17,824 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Dashboard.js
+2026-01-14 12:13:17,836 - Knowledge - INFO - Worker kw15 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/JwtRequestFilter.java
+2026-01-14 12:13:17,841 - Knowledge - INFO - Async storage completed for 4 embeddings
+2026-01-14 12:13:17,849 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/JwtTokenUtil.java (small file (2451 bytes))
+2026-01-14 12:13:17,862 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/JwtRequestFilter.java (small file (2541 bytes))
+2026-01-14 12:13:18,021 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/NotFoundPage.js
+2026-01-14 12:13:18,038 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/config/CorsConfig.java
+2026-01-14 12:13:18,040 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/SecurityConfig.java
+2026-01-14 12:13:18,047 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Footer.js
+2026-01-14 12:13:18,060 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/model/Department.java
+2026-01-14 12:13:18,062 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/VerifyUsername.js
+2026-01-14 12:13:18,079 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Navbar.js
+2026-01-14 12:13:18,087 - Knowledge - INFO - Async storing batch of 5 embeddings
+2026-01-14 12:13:18,130 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/EmployeeManagementApplication.java
+2026-01-14 12:13:18,138 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/SecurityConfig.java
+2026-01-14 12:13:18,172 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/CustomUserDetailsService.java
+2026-01-14 12:13:18,216 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/CustomUserDetailsService.java (ext=.java, size=1325)
+2026-01-14 12:13:18,216 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/DepartmentController.java
+2026-01-14 12:13:18,280 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/EmployeeController.java
+2026-01-14 12:13:18,362 - Knowledge - INFO - Async storage completed for 5 embeddings
+2026-01-14 12:13:18,467 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/SecurityConfig.java (small file (2273 bytes))
+2026-01-14 12:13:18,666 - Knowledge - INFO - [LLM_CALL] Completed: index.html:chunk1, Duration: 1607ms, PromptTokens: 20382, CompletionTokens: 59, Cost: $0.00206
+2026-01-14 12:13:18,675 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/DepartmentList.js
+2026-01-14 12:13:18,687 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/security/CustomUserDetailsService.java
+2026-01-14 12:13:18,687 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/index.html
+2026-01-14 12:13:18,718 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/ResetPassword.js
+2026-01-14 12:13:18,718 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:18,719 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/Register.js
+2026-01-14 12:13:18,726 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/service/EmployeeService.java
+2026-01-14 12:13:18,766 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/ARCHITECTURE.md
+2026-01-14 12:13:19,025 - Knowledge - INFO - Async storing batch of 4 embeddings
+2026-01-14 12:13:19,027 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:19,033 - Knowledge - INFO - Worker kw19 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/AuthController.java
+2026-01-14 12:13:19,038 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/EmployeeList.js
+2026-01-14 12:13:19,042 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/repository/DepartmentRepository.java
+2026-01-14 12:13:19,043 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/NewDepartmentForm.js
+2026-01-14 12:13:19,048 - Knowledge - INFO - Worker kw19 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/HomeController.java
+2026-01-14 12:13:19,083 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/HomeController.java (ext=.java, size=489)
+2026-01-14 12:13:19,083 - Knowledge - INFO - Worker kw19 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/config/DataInitializer.java
+2026-01-14 12:13:19,117 - Knowledge - INFO - Worker kw19 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/config/CorsConfig.java
+2026-01-14 12:13:19,129 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/config/CorsConfig.java (ext=.java, size=1239)
+2026-01-14 12:13:19,141 - Knowledge - INFO - Async storage completed for 4 embeddings
+2026-01-14 12:13:19,353 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/config/DataInitializer.java (small file (2371 bytes))
+2026-01-14 12:13:20,722 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/ProtectedRoute.js
+2026-01-14 12:13:20,727 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/EmployeeForm.js
+2026-01-14 12:13:20,843 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/repository/UserRepository.java
+2026-01-14 12:13:21,421 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/terraform/README.md
+2026-01-14 12:13:21,444 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:21,462 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/model/User.java
+2026-01-14 12:13:21,463 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/WIKI.md
+2026-01-14 12:13:21,518 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 274, Duration: 0ms
+2026-01-14 12:13:21,543 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 26ms
+2026-01-14 12:13:21,549 - Knowledge - INFO - Progress: 79.1% | Files: 121/153 | Rate: 5.80 files/sec | Queue: 8
+2026-01-14 12:13:21,759 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/DepartmentForm.js
+2026-01-14 12:13:21,778 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/theme.js
+2026-01-14 12:13:21,784 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/JwtTokenUtil.java
+2026-01-14 12:13:21,785 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/openapi.yaml
+2026-01-14 12:13:22,077 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/aws/README.md
+2026-01-14 12:13:22,080 - Knowledge - INFO - [kw6] Queue=8, InProgress=0, PendingWorkers=20/20, Completed=121/153 (79.1%)
+2026-01-14 12:13:22,081 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=8, active_workers=20/20
+2026-01-14 12:13:22,838 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/frontend/src/components/QuickActions.js
+2026-01-14 12:13:24,260 - Knowledge - INFO - [LLM_CALL] Completed: AuthController.java:chunk1, Duration: 5049ms, PromptTokens: 3390, CompletionTokens: 445, Cost: $0.00052
+2026-01-14 12:13:24,261 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/AuthController.java
+2026-01-14 12:13:24,513 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/index.html
+2026-01-14 12:13:25,544 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/JwtRequestFilter.java
+2026-01-14 12:13:25,650 - Knowledge - INFO - [kw9] Queue=8, InProgress=0, PendingWorkers=20/20, Completed=121/153 (79.1%)
+2026-01-14 12:13:25,659 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=8, active_workers=20/20
+2026-01-14 12:13:25,680 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/docker-compose.yml
+2026-01-14 12:13:26,195 - Knowledge - INFO - [LLM_CALL] Completed: DepartmentController.java:chunk1, Duration: 7667ms, PromptTokens: 2798, CompletionTokens: 538, Cost: $0.00049
+2026-01-14 12:13:26,197 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/DepartmentController.java
+2026-01-14 12:13:26,979 - Knowledge - INFO - [LLM_CALL] Completed: EmployeeController.java:chunk1, Duration: 8270ms, PromptTokens: 2718, CompletionTokens: 431, Cost: $0.00044
+2026-01-14 12:13:26,979 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/EmployeeController.java
+2026-01-14 12:13:27,900 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/AuthController.java
+2026-01-14 12:13:27,947 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/README.md
+2026-01-14 12:13:28,562 - Knowledge - INFO - [kw7] Queue=8, InProgress=0, PendingWorkers=20/20, Completed=121/153 (79.1%)
+2026-01-14 12:13:28,562 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=8, active_workers=20/20
+2026-01-14 12:13:29,539 - Knowledge - INFO - Async storing batch of 5 embeddings
+2026-01-14 12:13:29,580 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/EmployeeManagementApplication.java
+2026-01-14 12:13:29,669 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/service/EmployeeService.java
+2026-01-14 12:13:29,711 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/service/EmployeeService.java (ext=.java, size=1335)
+2026-01-14 12:13:29,723 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/service/DepartmentService.java
+2026-01-14 12:13:29,811 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/service/DepartmentService.java (ext=.java, size=1381)
+2026-01-14 12:13:29,811 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/model/Employee.java
+2026-01-14 12:13:29,865 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/model/Employee.java (ext=.java, size=1058)
+2026-01-14 12:13:29,879 - Knowledge - INFO - Async storage completed for 5 embeddings
+2026-01-14 12:13:29,957 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/EmployeeManagementApplication.java (small file (2624 bytes))
+2026-01-14 12:13:32,222 - Knowledge - INFO - Async storing batch of 5 embeddings
+2026-01-14 12:13:32,229 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/model/Department.java
+2026-01-14 12:13:32,254 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/model/Department.java (ext=.java, size=840)
+2026-01-14 12:13:32,256 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/model/User.java
+2026-01-14 12:13:32,311 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/model/User.java (ext=.java, size=1266)
+2026-01-14 12:13:32,311 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/exception/ResourceNotFoundException.java
+2026-01-14 12:13:32,320 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/exception/ResourceNotFoundException.java (ext=.java, size=530)
+2026-01-14 12:13:32,323 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/styles.css
+2026-01-14 12:13:32,335 - Knowledge - INFO - Fast-tracked /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/styles.css (ext=.css, size=34124)
+2026-01-14 12:13:32,337 - Knowledge - INFO - Async storage completed for 5 embeddings
+2026-01-14 12:13:33,782 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/EmployeeController.java
+2026-01-14 12:13:34,392 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 271, Duration: 0ms
+2026-01-14 12:13:34,405 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 13ms
+2026-01-14 12:13:34,454 - Knowledge - INFO - Progress: 83.0% | Files: 127/153 | Rate: 4.05 files/sec | Queue: 0
+2026-01-14 12:13:35,051 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/DepartmentController.java
+2026-01-14 12:13:35,616 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:35,616 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/model/Department.java
+2026-01-14 12:13:35,617 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/model/User.java
+2026-01-14 12:13:37,371 - Knowledge - INFO - [LLM_CALL] Completed: APITests.java:chunk1, Duration: 19549ms, PromptTokens: 3708, CompletionTokens: 695, Cost: $0.00065
+2026-01-14 12:13:37,425 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/APITests.java
+2026-01-14 12:13:37,438 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/exception/ResourceNotFoundException.java
+2026-01-14 12:13:37,922 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:37,926 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/AuthController.java
+2026-01-14 12:13:39,033 - Knowledge - INFO - [LLM_CALL] Completed: UtilitiesTests.java:chunk1, Duration: 20986ms, PromptTokens: 3706, CompletionTokens: 659, Cost: $0.00063
+2026-01-14 12:13:39,069 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/UtilitiesTests.java
+2026-01-14 12:13:40,122 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:40,122 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/EmployeeManagementApplication.java
+2026-01-14 12:13:40,123 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/styles.css
+2026-01-14 12:13:40,126 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:40,137 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/DepartmentController.java
+2026-01-14 12:13:41,587 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 272, Duration: 0ms
+2026-01-14 12:13:41,588 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/service/EmployeeService.java
+2026-01-14 12:13:41,588 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 2ms
+2026-01-14 12:13:41,644 - Knowledge - INFO - Progress: 90.2% | Files: 138/153 | Rate: 3.36 files/sec | Queue: 0
+2026-01-14 12:13:41,976 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/HomeController.java
+2026-01-14 12:13:42,573 - Knowledge - INFO - [LLM_CALL] Completed: AuxAPITests.java:chunk1, Duration: 24728ms, PromptTokens: 3714, CompletionTokens: 693, Cost: $0.00065
+2026-01-14 12:13:42,581 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/AuxAPITests.java
+2026-01-14 12:13:42,642 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/service/DepartmentService.java
+2026-01-14 12:13:43,572 - Knowledge - INFO - [LLM_CALL] Completed: AdditionalAPITests.java:chunk1, Duration: 26157ms, PromptTokens: 3714, CompletionTokens: 670, Cost: $0.00064
+2026-01-14 12:13:43,578 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/AdditionalAPITests.java
+2026-01-14 12:13:43,637 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/EmployeeController.java
+2026-01-14 12:13:43,678 - Knowledge - INFO - [LLM_CALL] Completed: FullAPITests.java:chunk1, Duration: 26413ms, PromptTokens: 3714, CompletionTokens: 684, Cost: $0.00064
+2026-01-14 12:13:43,691 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/FullAPITests.java
+2026-01-14 12:13:44,012 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/model/Employee.java
+2026-01-14 12:13:44,748 - Knowledge - INFO - [LLM_CALL] Completed: BackendAPITests.java:chunk1, Duration: 27172ms, PromptTokens: 3714, CompletionTokens: 688, Cost: $0.00065
+2026-01-14 12:13:44,749 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/BackendAPITests.java
+2026-01-14 12:13:44,932 - Knowledge - INFO - [LLM_CALL] Completed: script.js:chunk1, Duration: 27870ms, PromptTokens: 10022, CompletionTokens: 806, Cost: $0.00132
+2026-01-14 12:13:44,933 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/script.js
+2026-01-14 12:13:45,165 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/config/DataInitializer.java
+2026-01-14 12:13:45,211 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/AuthController.java
+2026-01-14 12:13:45,212 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/backend/src/main/java/com/example/employeemanagement/controller/HomeController.java
+2026-01-14 12:13:45,641 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/config/CorsConfig.java
+2026-01-14 12:13:45,710 - Knowledge - INFO - [LLM_CALL] Completed: JUnit.java:chunk1, Duration: 28445ms, PromptTokens: 3704, CompletionTokens: 671, Cost: $0.00064
+2026-01-14 12:13:45,711 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/JUnit.java
+2026-01-14 12:13:46,049 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:46,055 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/SecurityConfig.java
+2026-01-14 12:13:46,066 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:46,066 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/APITests.java
+2026-01-14 12:13:46,542 - Knowledge - INFO - [LLM_CALL] Completed: DepartmentManagementApplicationTests.java:chunk1, Duration: 29127ms, PromptTokens: 4074, CompletionTokens: 719, Cost: $0.00069
+2026-01-14 12:13:46,542 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/DepartmentManagementApplicationTests.java
+2026-01-14 12:13:46,572 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/security/CustomUserDetailsService.java
+2026-01-14 12:13:46,598 - Knowledge - INFO - [LLM_CALL] Completed: APITestSuite.java:chunk1, Duration: 29518ms, PromptTokens: 3708, CompletionTokens: 677, Cost: $0.00064
+2026-01-14 12:13:46,601 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/APITestSuite.java
+2026-01-14 12:13:46,795 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 272, Duration: 0ms
+2026-01-14 12:13:46,813 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 18ms
+2026-01-14 12:13:46,814 - Knowledge - INFO - Progress: 94.8% | Files: 145/153 | Rate: 3.07 files/sec | Queue: 0
+2026-01-14 12:13:47,062 - Knowledge - INFO - [LLM_CALL] Completed: EmployeeManagementApplicationTests.java:chunk1, Duration: 29520ms, PromptTokens: 3714, CompletionTokens: 693, Cost: $0.00065
+2026-01-14 12:13:47,062 - Knowledge - INFO - done ingest for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/EmployeeManagementApplicationTests.java
+2026-01-14 12:13:47,152 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/AuxAPITests.java
+2026-01-14 12:13:47,291 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/DepartmentController.java
+2026-01-14 12:13:47,292 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/controller/EmployeeController.java
+2026-01-14 12:13:47,587 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/UtilitiesTests.java
+2026-01-14 12:13:47,739 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagement/repository/EmployeeRepository.java
+2026-01-14 12:13:47,823 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:47,823 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/script.js
+2026-01-14 12:13:47,903 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/FullAPITests.java
+2026-01-14 12:13:47,990 - Knowledge - INFO - Processing batch of 4 files
+2026-01-14 12:13:47,990 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/APITestSuite.java
+2026-01-14 12:13:47,992 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/DepartmentManagementApplicationTests.java
+2026-01-14 12:13:47,993 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/JUnit.java
+2026-01-14 12:13:48,092 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/EmployeeManagementApplicationTests.java
+2026-01-14 12:13:48,243 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/AdditionalAPITests.java
+2026-01-14 12:13:48,385 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/packages/employeemanagementtests/employeemanagement/BackendAPITests.java
+2026-01-14 12:13:49,138 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 273, Duration: 0ms
+2026-01-14 12:13:49,141 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 3ms
+2026-01-14 12:13:49,143 - Knowledge - INFO - Progress: 100.0% | Files: 153/153 | Rate: 3.04 files/sec | Queue: 0
+2026-01-14 12:13:49,145 - Knowledge - INFO - Knowledge creation complete
+2026-01-14 12:13:49,145 - Knowledge - INFO - ==================================================
+2026-01-14 12:13:49,145 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-14 12:13:49,146 - Knowledge - INFO - ==================================================
+2026-01-14 12:13:49,146 - Knowledge - INFO - Total processing time: 50.19 seconds (0.84 minutes)
+2026-01-14 12:13:49,147 - Knowledge - INFO - Files processed: 0
+2026-01-14 12:13:49,147 - Knowledge - INFO - Processing rate: 0.00 files/second
+2026-01-14 12:13:49,148 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2026-01-14 12:13:49,148 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2026-01-14 12:13:49,148 - Knowledge - INFO - LLM Processing: 435.18s (867.1%)
+2026-01-14 12:13:49,149 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2026-01-14 12:13:49,149 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2026-01-14 12:13:49,149 - Knowledge - INFO - WebSocket Communication: 0.10s (0.2%)
+2026-01-14 12:13:49,149 - Knowledge - INFO - 
+[LLM_STATS]
+2026-01-14 12:13:49,149 - Knowledge - INFO - Total LLM calls: 27
+2026-01-14 12:13:49,150 - Knowledge - INFO - Average LLM response time: 16118ms
+2026-01-14 12:13:49,150 - Knowledge - INFO - Average prompt tokens: 5448.7
+2026-01-14 12:13:49,151 - Knowledge - INFO - Average completion tokens: 489.0
+2026-01-14 12:13:49,151 - Knowledge - INFO - Total prompt tokens: 147114
+2026-01-14 12:13:49,151 - Knowledge - INFO - Total completion tokens: 13202
+2026-01-14 12:13:49,152 - Knowledge - INFO - Total LLM cost: $0.0200
+2026-01-14 12:13:49,152 - Knowledge - INFO - 
+[DATABASE_STATS]
+2026-01-14 12:13:49,152 - Knowledge - INFO - MongoDB operations: 0
+2026-01-14 12:13:49,153 - Knowledge - INFO - Redis operations: 0
+2026-01-14 12:13:49,153 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2026-01-14 12:13:49,155 - Knowledge - INFO - WebSocket messages sent: 19
+2026-01-14 12:13:49,156 - Knowledge - INFO - Average message size: 137.3 bytes
+2026-01-14 12:13:49,156 - Knowledge - INFO - 
+[WORKER_STATS]
+2026-01-14 12:13:49,157 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2026-01-14 12:13:49,157 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2026-01-14 12:13:49,158 - Knowledge - INFO - ==================================================
+2026-01-14 12:13:49,158 - Knowledge - INFO - ==================================================
+2026-01-14 12:13:49,159 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-14 12:13:49,159 - Knowledge - INFO - ==================================================
+2026-01-14 12:13:49,159 - Knowledge - INFO - Total processing time: 50.28 seconds (0.84 minutes)
+2026-01-14 12:13:49,160 - Knowledge - INFO - Files processed: 153 of 153
+2026-01-14 12:13:49,160 - Knowledge - INFO - Processing rate: 3.04 files/second
+2026-01-14 12:13:49,160 - Knowledge - INFO - WebSocket messages sent: 9
+2026-01-14 12:13:49,161 - Knowledge - INFO - MongoDB operations: 153
+2026-01-14 12:13:49,161 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2026-01-14 12:13:49,161 - Knowledge - INFO - LLM costs: $0.0215
+2026-01-14 12:13:49,162 - Knowledge - INFO - Prompt tokens: 155990
+2026-01-14 12:13:49,162 - Knowledge - INFO - Completion tokens: 14771
+2026-01-14 12:13:49,163 - Knowledge - INFO - Updating org costs, total cost: 0.0215074
+2026-01-14 12:13:50,586 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 268, Duration: 0ms
+2026-01-14 12:13:50,588 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-14 12:13:50,669 - Knowledge - INFO - Knowledge saved to Redis successfully
+2026-01-14 12:13:51,263 - Knowledge - INFO - Wrote knowledge bundle: /app/data/T0002/199104/b4028lb/Employee-Management-Fullstack-App/.knowledge.zip
